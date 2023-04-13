@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Calculator using HTML, CSS, JAVA | Full JavaScript Tutorial for Beginners | Tutort Academy</title>
+</head>
+<body>
+	
+	<form action="" name="formvalue">
+		<input type="text" name="answer"/>
+		<!-- button to be show -->
+		<button type="button" value="1" onclick="formvalue.answer.value += 1">1</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 2">2</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 3">3</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += '+'">+</button>
+		<!-- button to be show -->
+		<button type="button" value="1" onclick="formvalue.answer.value += 4">4</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 5">5</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 6">6</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += '-'">-</button>
+		<!-- button to be show -->
+		<button type="button" value="1" onclick="formvalue.answer.value += 7">7</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 8">8</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += 9">9</button>
+		<button type="button" value="1" onclick="formvalue.answer.value += '*'">x</button>
+		<!-- button to be show -->
+		<input type="button" value="0" onclick="formvalue.answer.value += 0">
+		<input type="button" value="." onclick="formvalue.answer.value += '.'">
+		<input type="button" value="/" onclick="formvalue.answer.value += '/'">
+		<!-- equal button -->
+		<input type="button" value="=" onclick="formvalue.answer.value = eval(formvalue.answer.value)"/>
+		<!-- clear button -->
+		<input type="button" value="clear all" onclick="formvalue.answer.value = ''"/>
+	</form>
+</body>
+</html>

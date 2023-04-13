@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Create Counter Using JavaScript | JavaScript Project Tutorial for Beginners | Tutort Academy</title>
+</head>
+<body>
+	
+	<p id="result"></p>
+	<h2 class="text">Let us learn and explore about javascript</h2>
+
+	<div class="main">
+		<h4>click on the counter</h4>
+		<button id="button" class="buttonclass">Click me : 0</button>
+	</div>
+	<div class="main">
+		<button id="increase">+</button>
+		<button id="decrease">-</button>
+	</div>
+
+	<script type="text/javascript">
+		
+		var button = document.getElementById("button");
+		var count = 0;
+		button.addEventListener('click',function(){
+			count += 1;
+			button.innerHTML = "Click me : " + count 
+		});
+
+		var increase = document.getElementById('increase');
+		increase.addEventListener('click',function(){
+			count  += 1;
+			button.innerHTML = "Click me : " + count;
+		});
+
+		var decrease = document.getElementById('decrease');
+		decrease.addEventListener('click',function(){
+			count  -= 1;
+			button.innerHTML = "Click me : " + count;
+		});
+	</script>
+</body>
+</html>

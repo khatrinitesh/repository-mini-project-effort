@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Local Storage & Related Methods in JavaScript | JavaScript Tutorial for Beginners | Tutort Academy</title>
+</head>
+<body>
+	
+	<p id="result"></p>
+
+	<script type="text/javascript">
+
+		// what is localStorage
+		// methods in localStorage
+		// 1. setItem method (key,value)
+		// 2. getItem method -> accessible based on the key
+		// 3. removeItem method -> remove the item on the key value
+		// 4. clear method -> clear the data from the local storage
+		if(typeof Storage !== undefined){
+			localStorage.setItem('first','hello nitesh');
+			document.getElementById('result').innerHTML = localStorage.getItem('second');
+		}
+		else{
+			console.log('your browser is not compatible with local storage');
+		}
+	</script>
+</body>
+</html>
